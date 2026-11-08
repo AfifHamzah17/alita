@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { @apply bg-slate-50 font-sans text-slate-900 antialiased; }
+h1, h2, h3 { @apply font-display; }
+::selection { @apply bg-teal-100 text-teal-900; }
+a:focus-visible, button:focus-visible { @apply outline outline-2 outline-offset-4 outline-teal-600; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
